@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Catamaran", Impact, Haettenschweiler, "Arial Narrow Bold",
+    sans-serif;
+  margin: 0;
+  background-color: rebeccapurple;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  position: fixed;
+  top: 2%;
+  left: 0;
+  background-color: rgb(60, 24, 97);
+  padding: 0.25rem 1rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.password-container {
+  background-color: rgb(54, 15, 92);
+  min-width: 360px;
+  box-shadow: 20px 40px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.password-header {
+  padding: 1rem;
+}
+
+.password {
+  background-color: rgb(77, 31, 122);
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.5rem;
+  padding: 1rem;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.checkBox {
+  width: 15px;
+  height: 15px;
+}
+
+.password button {
+  background-color: #ff9900;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: inherit;
+  position: absolute;
+  font-weight: bold;
+  padding: 8px 12px;
+  top: 10px;
+  right: 5px;
+  height: 50px;
+  width: 45px;
+  color: rebeccapurple;
+  border-radius: 4px;
+  -moz-box-shadow: inset 0 0 3px black;
+  -webkit-box-shadow: inset 0 0 3px black;
+  box-shadow: inset 0 0 3px black;
+}
+
+.password-body {
+  padding: 0 1rem 1rem;
+}
+
+.form-control {
+  color: #ddd;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.35rem 0;
+}
+
+.generate {
+  background-color: #ff9900;
+  display: block;
+  border: none;
+  cursor: pointer;
+  color: rebeccapurple;
+  font-weight: bold;
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border-radius: 10px;
+  -moz-box-shadow: inset 0 0 5px black;
+  -webkit-box-shadow: inset 0 0 5px black;
+  box-shadow: inset 0 0 5px black;
+}
+
+/* social pannel */
+.social-pannel-container {
+  position: fixed;
+  bottom: 80px;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in-out;
+}
+
+.social-pannel-container.visible {
+  transform: translateX(-10px);
+}
+
+.social-pannel {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  border-radius: 16px;
+  box-shadow: 0 16px 31px -17px rgba(0, 31, 97, 0.6);
+  border: 5px solid #001f61;
+  position: relative;
+  height: 169px;
+  width: 370px;
+  max-width: calc(100% - 10px);
+}
+
+.social-pannel button.close-btn {
+  border: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #97a5ce;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.social-pannel button.close-btn:focus {
+  outline: none;
+}
+
+.social-pannel p {
+  background-color: #001f61;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  margin: 0;
+  line-height: 18px;
+  font-size: 14px;
+  padding: 2px 17px 6px;
+  width: 235px;
+}
+
+.social-pannel p i {
+  margin: 0 5px;
+}
+
+.social-pannel p a {
+  text-decoration: none;
+  color: #ff7500;
+}
+
+.social-pannel h4 {
+  margin: 20px 0;
+  color: #97a5ce;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 18px;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.social-pannel ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.social-pannel ul li {
+  margin: 0 10px;
+}
+
+.social-pannel ul li a {
+  border: 1px solid #dce1f2;
+  border-radius: 50%;
+  color: #001f61;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.social-pannel ul li a:hover {
+  border-color: #ff6a00;
+  box-shadow: 0 9px 12px -9px #ff6a00;
+}
+
+.floating-btn {
+  background-color: #001f61;
+  border: none;
+  border-radius: 26.5px;
+  border: 1px solid #001f61;
+  cursor: pointer;
+  padding: 12px 20px;
+  box-shadow: 0 16px 22px -17px #03153b;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.floating-btn:hover {
+  background-color: #ffffff;
+  color: #001f61;
+}
+
+.floating-btn:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 480px) {
+  .social-pannel-container.visible {
+    transform: translateX(0px);
+  }
+
+  .floating-btn {
+    right: 10px;
+  }
+}

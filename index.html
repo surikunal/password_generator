@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passward Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <div class="password-container">
+      <div class="password-header">
+        <div class="password">
+          <span id="password"></span>
+          <button id="copy">
+            <i class="fa fa-clone" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="password-body">
+        <div class="form-control">
+          <label for="len">Password length</label>
+          <input id="len" type="number" min="6" max="30" value="15" />
+        </div>
+        <div class="form-control">
+          <label for="upper">Contain Uppercase letters</label>
+          <input id="upper" type="checkbox" class="checkBox" />
+        </div>
+        <div class="form-control">
+          <label for="lower">Contain Lowercase letters</label>
+          <input id="lower" type="checkbox" class="checkBox" />
+        </div>
+        <div class="form-control">
+          <label for="number">Contain Numbers</label>
+          <input id="number" type="checkbox" class="checkBox" />
+        </div>
+        <div class="form-control">
+          <label for="symbol">Contain Symbols</label>
+          <input id="symbol" type="checkbox" class="checkBox" />
+        </div>
+        <button class="generate" id="generate">Generate Password</button>
+      </div>
+    </div>
+    <div class="social-pannel-container">
+      <div class="social-pannel">
+        <p>
+          Created with<i class="fas fa-heart"></i> by <a href="">Kunal Suri</a>
+        </p>
+        <button class="close-btn"><i class="fas fa-times"></i></button>
+        <h4>Get in touch on</h4>
+        <ul>
+          <li>
+            <a href="https://www.instagram.com/kunalsuri__/">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/surikunal">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/kunal-suri-1a9135171/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/kunalsu39381047">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="floating-btn">Get In Touch</button>
+  </body>
+</html>
